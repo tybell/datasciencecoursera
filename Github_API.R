@@ -25,7 +25,7 @@ stop_for_status(request)
 
 # Retrieve contents of page
 # JSON is a common output format used by APIs, and is indeed the case here
-api_data = content(request)
+api_data <- content(request)
 
 #Convert data to tbl_json
 data_tibble <- spread_all(api_data)
